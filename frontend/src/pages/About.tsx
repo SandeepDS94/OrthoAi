@@ -73,7 +73,7 @@ const About = () => {
                             className="text-center p-6 bg-white/5 rounded-xl border border-white/10"
                         >
                             <div className="flex justify-center mb-4 text-accent">
-                                {React.cloneElement(stat.icon as React.ReactElement, { size: 32 })}
+                                {React.cloneElement(stat.icon as any, { size: 32 })}
                             </div>
                             <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
                             <div className="text-gray-400">{stat.label}</div>
